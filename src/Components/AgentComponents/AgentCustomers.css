@@ -1,0 +1,88 @@
+.rd-container {
+    padding: 25px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+.rd-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* TABLE WRAPPER FOR SCROLL */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+
+.rd-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.rd-table th {
+    background: #003366;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.rd-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+/* HOVER */
+
+.rd-table tr:hover {
+    background: #f1f5ff;
+}
+
+/* STATUS */
+
+.paid {
+    color: green;
+    font-weight: 700;
+}
+
+.pending {
+    color: red;
+    font-weight: 700;
+}
+
+/* EMI DATES */
+
+.emi-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.emi-dates span {
+    background: #e8f0ff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+    .rd-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,43 @@
+.edit-scheme-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.edit-scheme-card{
+    width:100%;
+    max-width:600px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.edit-scheme-card h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.edit-scheme-card form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.edit-scheme-card input{
+    height:50px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:0 15px;
+}
+
+.edit-scheme-card button{
+    height:50px;
+    border:none;
+    border-radius:10px;
+    background:#003366;
+    color:white;
+    font-weight:600;
+}

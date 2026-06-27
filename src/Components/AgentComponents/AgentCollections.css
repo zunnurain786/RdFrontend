@@ -1,0 +1,62 @@
+.collection-page {
+    padding: 25px;
+    background: #f9fafb;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* TABLE CONTAINER */
+
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* SUB TITLE */
+
+.sub-title {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+/* DANGER */
+
+.danger {
+    color: red;
+    font-weight: bold;
+}
+
+/* HOVER EFFECT */
+
+tr:hover {
+    background: #f5f7ff;
+    transition: 0.3s;
+}

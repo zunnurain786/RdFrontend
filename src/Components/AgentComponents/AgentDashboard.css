@@ -1,0 +1,414 @@
+/* =========================
+   PAGE
+========================= */
+
+.agent-dashboard {
+    padding: 25px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.dashboard-loading {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #004a99;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    margin: 30px 0 15px;
+    color: #00264d;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* =========================
+   WELCOME CARD
+========================= */
+
+.welcome-card {
+    background: linear-gradient(
+        135deg,
+        #00264d,
+        #004a99,
+        #0066cc
+    );
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow:
+        0 20px 40px rgba(0, 74, 153, .25);
+
+    margin-bottom: 30px;
+}
+
+.welcome-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.welcome-card p {
+    margin: 6px 0;
+    opacity: .95;
+}
+
+/* =========================
+   STAT GRID
+========================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,1fr));
+
+    gap: 20px;
+}
+
+/* =========================
+   STAT CARD
+========================= */
+
+.stat-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    transition: .3s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #004a99,
+        #0066cc
+    );
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h4 {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    color: #00264d;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* =========================
+   EARNING CARDS
+========================= */
+
+.earning-card {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f9fcff
+    );
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    transition: .3s;
+
+    border-left: 6px solid #10b981;
+}
+
+.earning-card:hover {
+    transform: translateY(-5px);
+}
+
+.earning-card h4 {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.earning-card p {
+    color: #10b981;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-container {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container thead {
+    background: linear-gradient(
+        135deg,
+        #00264d,
+        #004a99
+    );
+}
+
+.table-container th {
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table-container td {
+    padding: 15px;
+    border-bottom: 1px solid #edf2f7;
+    color: #374151;
+    font-size: 14px;
+}
+
+.table-container tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-row {
+    text-align: center;
+    padding: 30px;
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+/* =========================
+   RD CARDS
+========================= */
+
+.rd-section {
+    margin-top: 25px;
+}
+
+.rd-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    border-left: 5px solid #f59e0b;
+
+    transition: .3s;
+}
+
+.rd-card:hover {
+    transform: translateY(-5px);
+}
+
+.rd-card h4 {
+    color: #00264d;
+    margin-bottom: 12px;
+}
+
+.rd-card p {
+    margin: 8px 0;
+    color: #4b5563;
+}
+
+/* =========================
+   SCHEME GRID
+========================= */
+
+.scheme-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 20px;
+}
+
+.scheme-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    transition: .3s;
+
+    border-top: 5px solid #0066cc;
+}
+
+.scheme-card:hover {
+    transform: translateY(-5px);
+}
+
+.scheme-card h4 {
+    color: #00264d;
+    margin-bottom: 12px;
+}
+
+.scheme-card p {
+    margin: 8px 0;
+    color: #4b5563;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.scheme-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #004a99,
+        #0066cc
+    );
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.scheme-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(0,102,204,.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .agent-dashboard{
+        padding:15px;
+    }
+
+    .welcome-card{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .welcome-card h2{
+        font-size:24px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .scheme-grid{
+        grid-template-columns:1fr;
+    }
+
+    .table-container{
+        padding:10px;
+    }
+
+    .table-container th,
+    .table-container td{
+        padding:12px;
+        font-size:13px;
+    }
+}
+
+@media(max-width:480px){
+
+    .section-title{
+        font-size:18px;
+    }
+
+    .stat-card p,
+    .earning-card p{
+        font-size:22px;
+    }
+
+    .welcome-card{
+        padding:20px;
+    }
+
+    .welcome-card h2{
+        font-size:20px;
+    }
+}

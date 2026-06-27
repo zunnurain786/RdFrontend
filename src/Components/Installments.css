@@ -1,0 +1,210 @@
+.installments-container{
+
+    padding:25px;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+}
+
+.installments-header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+}
+
+.installments-header h2{
+
+    color:#003366;
+
+    margin-bottom:8px;
+
+    font-size:28px;
+}
+
+.installments-header p{
+
+    color:#666;
+}
+
+.installments-table-wrapper{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:auto;
+
+    box-shadow:
+    0 10px 25px rgba(
+        0,
+        0,
+        0,
+        .08
+    );
+}
+
+.installments-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:1100px;
+}
+
+.installments-table thead{
+
+    background:
+    linear-gradient(
+        135deg,
+        #003366,
+        #0056b3
+    );
+
+    color:white;
+}
+
+.installments-table th{
+
+    padding:16px;
+
+    text-align:center;
+
+    font-size:14px;
+}
+
+.installments-table td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:
+    1px solid #eee;
+
+    font-size:14px;
+}
+
+.installments-table tbody tr{
+
+    transition:.3s;
+}
+
+.installments-table tbody tr:hover{
+
+    background:#f9fbff;
+}
+
+.paid-badge{
+
+    background:#d1fae5;
+
+    color:#065f46;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+.pending-badge{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+.pay-btn{
+
+    border:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #003366,
+        #0056b3
+    );
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.pay-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 15px rgba(
+        0,
+        86,
+        179,
+        .25
+    );
+}
+
+.completed-text{
+
+    color:green;
+
+    font-weight:700;
+}
+
+.empty-row{
+
+    padding:25px;
+
+    color:#777;
+
+    font-size:15px;
+}
+
+.installments-loading{
+
+    height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .installments-container{
+
+        padding:15px;
+    }
+
+    .installments-header h2{
+
+        font-size:22px;
+    }
+
+    .installments-table{
+
+        min-width:900px;
+    }
+}

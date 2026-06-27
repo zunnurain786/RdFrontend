@@ -1,0 +1,177 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.admin-form-overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.65);
+
+display:flex;
+justify-content:center;
+
+/* instead of center */
+align-items:flex-start;
+
+overflow-y:auto;
+
+padding:30px 20px;
+
+z-index:5000;
+}
+
+.admin-form-modal{
+width:100%;
+max-width:600px;
+
+background:#fff;
+border-radius:20px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.25);
+
+animation:adminPopup .3s ease;
+
+/* important */
+max-height:95vh;
+overflow-y:auto;
+}
+
+@keyframes adminPopup{
+
+from{
+opacity:0;
+transform:scale(.95);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+.admin-form-header{
+background:
+linear-gradient(
+135deg,
+#003366,
+#0056b3
+);
+
+padding:30px;
+text-align:center;
+color:white;
+
+position:sticky;
+top:0;
+z-index:5;
+}
+
+.admin-form-header h2{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.admin-form-header p{
+opacity:.9;
+}
+
+.admin-form{
+padding:30px;
+}
+
+.admin-group{
+display:flex;
+flex-direction:column;
+margin-bottom:18px;
+}
+
+.admin-group label{
+margin-bottom:8px;
+font-weight:600;
+color:#374151;
+}
+
+.admin-group input,
+.admin-group select{
+height:50px;
+padding:0 15px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-size:15px;
+transition:.3s;
+}
+
+.admin-group input:focus,
+.admin-group select:focus{
+outline:none;
+border-color:#0056b3;
+
+box-shadow:
+0 0 0 4px rgba(0,86,179,.15);
+}
+
+.admin-checkbox{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.admin-checkbox input{
+width:18px;
+height:18px;
+cursor:pointer;
+}
+
+.admin-checkbox label{
+font-weight:600;
+color:#374151;
+cursor:pointer;
+}
+
+.admin-save-btn{
+width:100%;
+height:55px;
+border:none;
+border-radius:12px;
+background:#0056b3;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.admin-save-btn:hover{
+background:#003366;
+transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+.admin-form-overlay{
+padding:15px;
+}
+
+.admin-form-modal{
+max-width:100%;
+max-height:98vh;
+}
+
+.admin-form{
+padding:20px;
+}
+
+.admin-form-header{
+padding:20px;
+}
+
+.admin-form-header h2{
+font-size:24px;
+}
+
+}

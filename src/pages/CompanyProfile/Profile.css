@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.company-profile-container{
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+/* Banner */
+
+.company-profile-banner{
+    background:linear-gradient(
+        135deg,
+        #00264d,
+        #003366,
+        #0056b3
+    );
+
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.company-profile-banner h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.company-profile-banner p{
+    font-size:18px;
+    color:#dbe7f3;
+}
+
+/* Content */
+
+.company-profile-content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* Cards */
+
+.company-profile-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.company-profile-card h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.company-profile-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* Stats */
+
+.company-profile-stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.company-stat-box{
+    flex:1;
+    min-width:220px;
+
+    background:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.company-stat-box:hover{
+    transform:translateY(-5px);
+}
+
+.company-stat-box h3{
+    color:#0056b3;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.company-stat-box span{
+    color:#666;
+}
+
+/* Services */
+
+.company-service-list{
+    padding-left:20px;
+}
+
+.company-service-list li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+/* Contact */
+
+.company-contact-info p{
+    margin-bottom:12px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .company-profile-banner{
+        padding:50px 15px;
+    }
+
+    .company-profile-banner h1{
+        font-size:30px;
+    }
+
+    .company-profile-content{
+        width:95%;
+    }
+
+    .company-profile-card{
+        padding:20px;
+    }
+
+    .company-stat-box{
+        min-width:100%;
+    }
+}
