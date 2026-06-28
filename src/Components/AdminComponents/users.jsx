@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getAllUsers } from "../../services/userService";
-import "./Users.css";
+import "./users.css";
 
 export default function Users() {
 
